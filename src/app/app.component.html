@@ -1,0 +1,5 @@
+<app-header></app-header>
+<main>
+  <app-get-create (getCreated)="onGetAdded($event)"></app-get-create>
+  <app-get-list [gets]="storedGets"></app-get-list>
+</main>

@@ -1,0 +1,27 @@
+<!-- <mat-card>
+  <mat-form-field>
+    <textarea matInput rows="6" [(ngModel)]="enteredValue"></textarea>  2 way binding
+  </mat-form-field>
+  <button mat-raised-button
+  color="accent" (click)="onAddPost()">Save Flight Query</button>  event binding
+</mat-card> -->
+
+<!-- <p>{{ newPost }}</p> -->
+<!-- string interpolation -->
+<mat-card>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="enteredCity">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="enteredState">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="departureTime">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="arrivalTime">
+  </mat-form-field>
+
+
+  <button mat-raised-button color="accent" (click)="onAddPost()">Save Query</button>
+</mat-card>

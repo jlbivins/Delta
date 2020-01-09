@@ -1,0 +1,10 @@
+<mat-accordion mult="true" *ngIf="gets.length > 0">
+  <mat-expansion-panel *ngFor="let get of gets">
+    <!-- structural directive -->
+    <mat-expansion-panel-header>
+      {{ get.city }}
+    </mat-expansion-panel-header>
+    {{ get.state }}
+  </mat-expansion-panel>
+</mat-accordion>
+<p class="info-text mat-body-1" *ngIf="gets.length <= 0">Destination City State </p>
