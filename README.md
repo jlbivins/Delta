@@ -1,27 +1,37 @@
-# MeanApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+# ODS Full Stack Coding Assignment
 
-## Development server
+## Assignment
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Create a web application that allows a user to search for flights and display the results in a tabular view. This project was generated with [Angular CLI](https://github.com/angular. I choose localhost:3001 for the backend server.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. The user is allowed to input the destination city and state in the user interface, ie:
+Nashville
+Tennessee.
 
-## Build
+The input is then captured in the 'Get' object along with placeholders for the departure & arrival
+times to be implemented for the Mongo database. Gets are to be used for the query t o the Mongo dB
+to return times for the user specified city. One of the two RESTful endpoints was coded, app.use('/api/gets',(req, res, next) => {const gets = [.... to route to route the get to the MongoDB
+ 
+2. Provide an auto-suggest feature for station.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+3. Provide two RESTful endpoints supporting the functionality listed in steps 1 and 2.
 
-## Running unit tests
+## Datasource
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+A zipped CSV file of flights is available in /data/flights.csv. Each row in the CSV file represents a flight.
 
-## Running end-to-end tests
+## Implementation
+I attempted to use MEAN stack. One server was implemented 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Use any technologies you want. If you are familiar with Python and/or Angular please use these for your app. You can use any additional technologies/frameworks/dbs/libraries you would like to.
 
-## Further help
+To submit your solution, clone this repo and push to a personal github repo and submit the link.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Please update the README
+
+Return your solution within 1 week - this is to provide a buffer for busy schedules.
+
+Please ask any questions you have.
