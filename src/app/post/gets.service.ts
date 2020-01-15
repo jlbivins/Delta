@@ -1,21 +1,26 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
-import { Post } from './post.model';
+import { Get } from './get.model';
 @Injectable({ providedIn: 'root' })
 export class GetsService {
-  private posts: Post[] = [];
-  private postsUpdated = new Subject<Get[]>();
+  private gets: Get[] = [];
+  private getsUpdated = new Subject<Get[]>();
 
   getGets() {
-    return [...this.posts];
+    return [...this.gets];
   }
   getGetUpdateListener() {
     return this.getsUpdated.asObservable();
   }
 
-  addGet(city: string, state: string) {
-    const get: Get = { city: city, state: state };
-    this.gets.push(get);
+  addGet(city: string, state: string, departure: string, arrival: string) {
+    const gets: Get = {
+      city: city,
+      state: state,
+      departure: departure,
+      arrival: arrival
+    };
+    this.gets.push(gets);
   }
 }
