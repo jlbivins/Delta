@@ -5,7 +5,7 @@ const app = express();
 
 app.use('/api/gets',(req, res, next) => {
 const gets = [
-	{id: 'akdjalkd',
+	{id: 'akdjalkd',  // placeholder until dB finished
 	 city: 'Las Vegas',
 	 state: 'NV',
 	 departure: '10:15 am',
