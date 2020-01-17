@@ -9,15 +9,19 @@ import { Get } from '../get.model';
   styleUrls: ['./get-create.component.css']
 })
 export class GetCreateComponent {
+  dbid = '';
   enteredCity = '';
   enteredState = '';
   departureTime = '';
   arrivalTime = '';
   @Output() getCreated = new EventEmitter<Get>();
 
+  //constructor(public getsService: GetsService)
+
 
   onAddPost() {
     const get: Get = {
+      id: this.dbid,
       city: this.enteredCity,
       state: this.enteredState,
       departure: this.departureTime,
